@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafío 1 - Calculando el total</title>
+
+  <!-- Local CSS-->
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Font-Awesome personal KIT -->
+  <script src="https://kit.fontawesome.com/faed31811b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>  
+    <div class="formulario">
+        <img src="assets/img/Ave Fenix1.png" alt="Imagen de una ave Fenix1">
+        <h1>Calculando el total</h1>
+        <form id="calculo-form">
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" required>
+            
+            <label for="color">Selecciona un color:</label>
+            <select id="color" name="color">
+                <option value="azul">Azul</option>
+                <option value="negro">Negro</option>
+                <option value="verde">Verde</option>
+                <option value="amarillo">Amarillo</option>
+                <option value="rojo">Rojo</option>
+            </select>
+            
+            <label for="valor-color">Precio:</label>
+            <input type="text" name="nombre" id="nombreInput" placeholder="40.000">
+
+            
+            <button type="button" id="calcular">Calcular total</button>
+        </form>
+
+        <div id="resultado">
+          <h2>Resultado</h2>
+          <p>Total a pagar: <span id="total">0</span></p>
+          <p>Cantidad: <span id="cantidad-seleccionada">0</span></p>
+          <p>Color: <span id="color-seleccionado"></span></p>
+        </div>
+      </div>
+    </div>      
+
+  <script src="assets/Js/script.js"></script>
+</body>
+
+</html>
